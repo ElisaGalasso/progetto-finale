@@ -1,0 +1,428 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+/* ======================
+   GENERALE
+====================== */
+
+body {
+    background-color: #1b1b1b;
+    color: #e5e5e5;
+}
+
+
+/* ======================
+   NAVBAR
+====================== */
+
+.navbar {
+    background-color: #0b0b0b !important;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #bdbdbd !important;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+
+/* ======================
+   BOTTONI
+====================== */
+
+.btn {
+    border-radius: 10px;
+}
+
+
+.btn-primary {
+
+    background-color: #333;
+    border-color: #444;
+    color: white;
+
+}
+
+.btn-primary:hover {
+
+    background-color: #555;
+    border-color: #666;
+
+}
+
+
+.btn-add-movie {
+
+    background-color: #2b2b2b;
+    border: 1px solid #555;
+    color: white;
+
+}
+
+.btn-add-movie:hover {
+
+    background-color: #444;
+    color: white;
+
+}
+
+
+/* ======================
+   CARD FILM
+====================== */
+
+.movie-card {
+
+    background-color: #252525;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #3a3a3a;
+
+    transition: .3s;
+
+}
+
+
+.movie-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+
+}
+
+
+.movie-poster {
+
+    height: 320px;
+    object-fit: cover;
+
+}
+
+
+.movie-card .card-title {
+
+    color: white;
+
+}
+
+
+.movie-card .text-muted {
+
+    color: #aaa !important;
+
+}
+
+
+/* ======================
+   FOOTER
+====================== */
+
+footer {
+
+    background-color: #0b0b0b !important;
+    border-top: 1px solid #333;
+
+}
+
+
+footer a {
+
+    color: #aaa !important;
+
+}
+
+footer a:hover {
+
+    color: white !important;
+
+}
+
+//singolo fim
+
+/* ======================
+   DETTAGLIO FILM
+====================== */
+
+
+.movie-detail-card {
+
+    background-color: #252525;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #3a3a3a;
+
+}
+
+
+.movie-detail-poster {
+
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+    object-fit: cover;
+
+}
+
+
+.movie-detail-card h1 {
+
+    color: white;
+
+}
+
+
+.movie-detail-card p {
+
+    color: #ddd;
+
+}
+
+
+.movie-detail-card hr {
+
+    border-color: #555;
+
+}
+
+/* ======================
+   BOTTONE MODIFICA
+====================== */
+
+.btn-edit {
+
+    background-color: #3b5b73;
+    border: 1px solid #4d718c;
+    color: white;
+
+    transition: .3s;
+
+}
+
+.btn-edit:hover {
+    background-color: #4d718c;
+    border-color: #6d91aa;
+    color: white;
+    transform: translateY(-2px)
+}
+
+//form create
+
+/* ======================
+   BOTTONE SALVA
+====================== */
+
+.btn-save {
+
+    background-color: #3b5b73 !important;
+    border: 1px solid #4d718c !important;
+    color: #ffffff !important;
+
+    transition: .3s;
+
+}
+
+
+.btn-save:hover {
+
+    background-color: #4d718c !important;
+    border-color: #6d91aa !important;
+    color: #ffffff !important;
+
+}
+
+//index registi
+
+/* ======================
+   CARD REGISTI
+====================== */
+
+.icon-red {
+    color: #dc3545;
+}
+
+.director-card {
+
+    background-color: #252525;
+    border: 1px solid #3a3a3a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+
+}
+
+
+.director-card:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
+
+}
+
+
+
+.director-photo {
+
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+}
+
+//show regista
+
+/* ======================
+   DETTAGLIO REGISTA
+====================== */
+
+.director-detail-photo {
+
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    object-fit: cover;
+
+}
+
+//edit regista
+
+/* ======================
+   FOTO EDIT REGISTA
+====================== */
+
+.edit-director-photo {
+
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #444;
+
+}
+
+//index generi
+
+/* ======================
+   CARD GENERI
+====================== */
+
+.genre-card {
+
+    background-color: #252525;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    padding: 18px;
+
+    transition: .3s;
+
+}
+
+
+
+.genre-card:hover {
+
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
+
+}
+
+
+
+.genre-card h4 {
+
+    color: white;
+
+}
+
+//guest login
+
+/* ======================
+   LOGIN / REGISTER
+====================== */
+
+
+.auth-page {
+
+    min-height: 100vh;
+    background-color: #1b1b1b;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.auth-icon {
+
+    font-size: 4rem;
+    color: #dc3545;
+
+}
+
+
+
+.auth-card {
+
+    width: 100%;
+    max-width: 420px;
+
+    background-color: #252525;
+
+    border: 1px solid #3a3a3a;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+}
+
+/* ======================
+   AUTH BUTTON
+====================== */
+
+.btn-auth {
+
+    background-color: #dc3545;
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 8px 22px;
+
+    border: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+
+.btn-auth:hover {
+
+    background-color: #b02a37;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
