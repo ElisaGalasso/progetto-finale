@@ -15,14 +15,14 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-//aggiungo le rotte
-Route::resource('movies', MovieController::class);
-Route::resource('genres', GenreController::class);
-Route::resource('directors', DirectorController::class);
 
 
 Route::middleware('auth')->group(function () {
-
+    
+    //aggiungo le rotte
+    Route::resource('movies', MovieController::class);
+    Route::resource('genres', GenreController::class);
+    Route::resource('directors', DirectorController::class);
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
